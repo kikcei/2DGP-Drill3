@@ -96,6 +96,7 @@ def draw_boy(x: float, y: float):
     grass.draw(400, 30)
     update_canvas()
     delay(0.05)
+    pass
 
 
 while True:
