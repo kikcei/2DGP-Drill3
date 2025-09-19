@@ -45,26 +45,38 @@ def move_rectangle():
 
 def move_triangle_right1():
     print("Move triangle right1")
+    for x in range(400,770,10):
+        draw_boy(x, 90)
     pass
 
 def move_triangle_up():
     print("Move triangle up")
+    x=770
+    for y in range(90,550,10):
+        draw_boy(x, y)
+        x-=8
     pass
 
 def move_triangle_down():
     print("Move triangle down")
+    x = 400
+    for y in range(550,90,-10):
+        draw_boy(x, y)
+        x -= 8
     pass
 
 def move_triangle_right2():
     print("Move triangle right2")
+    for x in range(30,400,10):
+        draw_boy(x, 90)
     pass
 
 def move_triangle():
     print("Move triangle")
     move_triangle_right1()
-    move_triangle_right2()
     move_triangle_up()
     move_triangle_down()
+    move_triangle_right2()
     pass
 
 
@@ -87,9 +99,9 @@ def draw_boy(x: float, y: float):
 
 
 while True:
+    move_rectangle()
     move_triangle()
     move_circle()
-    move_rectangle()
     break
     pass
 
